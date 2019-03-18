@@ -37,3 +37,4 @@ To get up and running with this course, please clone this repository by running 
 ## Table of Contents
 
 * [Chapter 1: Hello world!](Chapter_1)
+* [Chapter 2: Setting Up Mongoose & Connecting to MongoDB](Chapter_2)
