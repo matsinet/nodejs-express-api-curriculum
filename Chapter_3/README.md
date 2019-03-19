@@ -52,7 +52,7 @@ As you can see, once we save the `newPost` we will just return that data back to
 
 ## Testing
 
-In order to test this, we are going to use Postman to save the data. First, startup your server by `cd`ing into the `examples/` directory and running `node create.js` or by doing the same wherever you saved your file. Open up a new tab in Postman and enter `http://localhost:3000/add`. Then, under the `Body` tab, click on `Raw` and then in the dropdown that says `Text`, select `JSON`. In the body of the request, insert the following data:
+In order to test this, we are going to use Postman to save the data. First, startup your server by `cd`ing into the `examples/` directory and running `node create.js` or by doing the same wherever you saved your file. Open up a new tab in Postman and enter `http://localhost:3000/add`. In the dropdown next to the URL, select the dropdown and click on "POST". Then, under the `Body` tab, click on `Raw` and then in the dropdown that says `Text`, select `JSON`. In the body of the request, insert the following data:
 
 ```
 {
