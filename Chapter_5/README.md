@@ -19,7 +19,7 @@ Here, we are using the `Post` constant that we created to query the database and
 
 ## Testing
 
-In order to test this, we are going to use Postman to updaate the data. First, startup your server by `cd`ing into the `examples/` directory and running `node update.js` or by doing the same wherever you saved your file. Open up a new tab in Postman and enter `http://localhost:3000/update`. In the dropdown next to the URL, select the dropdown and click on "PATCH". Then, under the `Body` tab, click on `Raw` and then in the dropdown that says `Text`, select `JSON`. In the body of the request, insert the following data:
+In order to test this, we are going to use Postman to update the data. First, startup your server by `cd`ing into the `examples/` directory and running `node update.js` or by doing the same wherever you saved your file. Open up a new tab in Postman and enter `http://localhost:3000/update`. In the dropdown next to the URL, select the dropdown and click on "PATCH". Then, under the `Body` tab, click on `Raw` and then in the dropdown that says `Text`, select `JSON`. In the body of the request, insert the following data:
 
 ```
 {
