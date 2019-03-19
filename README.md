@@ -38,3 +38,7 @@ To get up and running with this course, please clone this repository by running 
 
 * [Chapter 1: Hello world!](Chapter_1)
 * [Chapter 2: Setting Up Mongoose & Connecting to MongoDB](Chapter_2)
+* [Chapter 3: Let's Create!](Chapter_3)
+* [Chapter 4: Reading from the Database](Chapter_4)
+* [Chapter 5: Updating a Record](Chapter_5)
+* [Chapter 6: Final Step: Delete](Chapter_6)
