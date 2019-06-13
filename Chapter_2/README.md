@@ -52,3 +52,5 @@ res.send(db_status)
 ## Running Our Example
 
 In order to run this example, you will need to start `mongodb-runner` *first* in order for our Express server to make a successful connection to it. If you want to use our pre-built example, `cd` into the `examples/` directory and first run `mongodb-runner start` and then run `node connect-mongo.js`. If the connection was sucessful, you should be able to navigate to [http://localhost:3000/](htto://localhost:3000) and see the words "Successfully opened connection to Mongo!".
+
+<< [Chapter 1: Hello world!](Chapter_1) || [Home](..) || [Chapter 3: Let's Create!](Chapter_3) >>
