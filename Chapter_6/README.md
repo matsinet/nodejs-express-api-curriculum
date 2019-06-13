@@ -28,3 +28,5 @@ In order to test this, we are going to use Postman to delete the record. First, 
 ```
 
 When you click "Send" you should see the deleted post being sent back. In the event that there is an error message, you will receive that instead.
+
+<< [Chapter 5: Updating a Record](../Chapter_5/README.md) || [Home](../README.md)

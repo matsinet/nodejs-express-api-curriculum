@@ -31,3 +31,4 @@ In order to test this, we are going to use Postman to update the data. First, st
 
 When you click "Send" you should see that same data returned from the server so that you know it was properly updated. In the event that there is an error message, you will receive that instead.
 
+<< [Chapter 4: Reading from the Database](../Chapter_4/README.md) || [Home](../README.md) || [Chapter 6: Final Step: Delete](../Chapter_6/README.md) >>

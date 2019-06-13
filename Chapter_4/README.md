@@ -31,3 +31,5 @@ Where we pass the `id` of the post into the request body.
 In order to test this, we are going to use Postman to retrieve the data. First, startup your server by `cd`ing into the `examples/` directory and running `node read.js` or by doing the same wherever you saved your file. Open up a new tab in Postman and enter `http://localhost:3000/list`.
 
 When you click "Send" you should see a list of all the different posts that you have saved in your database.
+
+<< [Chapter 3: Let's Create!](../Chapter_3/README.md) || [Home](../README.md) || [Chapter 5: Updating a Record](../Chapter_5/README.md) >>
