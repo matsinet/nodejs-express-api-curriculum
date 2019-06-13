@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <button id="load">Load Posts</button>
+    <section>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Body</th>
+                </tr>    
+            </thead>
+            <tbody id="posts"></tbody>
+        </table>
+    </section>
+    <script>
+        const loadBtn = document.getElementById('load')
+        loadBtn.addEventListener('click', (event) => {
+            event.preventDefault();
+
+            axios.get('http://localhost:3000/posts')
+                .then((response) => {
+                    console.log(response)
+                    const posts = document.getElementById('posts')
+                    for(post of response.data) {
+                        posts.innerHTML += `<tr><td>${post._id}</td><td>${post.title}</td><td>${post.body}</td></tr>`;
+                    }
+                })
+        })
+    </script>
+</body>
+</html>

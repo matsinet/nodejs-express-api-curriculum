@@ -17,8 +17,8 @@
   },
   "homepage": "https://github.com/savvy-coders/nodejs-express-api-curriculum#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.16.4",
-    "mongodb-runner": "^4.7.1",
-    "mongoose": "^5.4.19"
+    "mongoose": "^5.5.15"
   }
 }

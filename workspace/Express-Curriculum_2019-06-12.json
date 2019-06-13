@@ -1,0 +1,148 @@
+{
+	"_type": "export",
+	"__export_format": 3,
+	"__export_date": "2019-06-13T03:46:28.910Z",
+	"__export_source": "insomnia.desktop.app:v6.3.2",
+	"resources": [
+		{
+			"_id": "wrk_4ddd706168c54d48baf385ae78a2ea4e",
+			"created": 1560391497626,
+			"description": "",
+			"modified": 1560391497626,
+			"name": "Savvy Coders Node/Express Curriculum",
+			"parentId": null,
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_3973f76e28b4496e9d9ef12a7c5c9ad3",
+			"color": null,
+			"created": 1560391497707,
+			"data": {},
+			"isPrivate": false,
+			"metaSortKey": 1560391497707,
+			"modified": 1560391497707,
+			"name": "New Environment",
+			"parentId": "wrk_4ddd706168c54d48baf385ae78a2ea4e",
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_f35314bb186741b8b7aab3282639d430",
+			"cookies": [],
+			"created": 1560391497726,
+			"modified": 1560391497726,
+			"name": "Default Jar",
+			"parentId": "wrk_4ddd706168c54d48baf385ae78a2ea4e",
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "req_d0d9de6fcba74106823906c22592a675",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"title\": \"test post\",\n\t\"body\": \"test body\"\n}"
+			},
+			"created": 1560391515971,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_5b1c52d5b9d04d0c97ac31904aedc7c5",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1560391515972,
+			"method": "POST",
+			"modified": 1560393074886,
+			"name": "/posts",
+			"parameters": [],
+			"parentId": "wrk_4ddd706168c54d48baf385ae78a2ea4e",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:3000/posts",
+			"_type": "request"
+		},
+		{
+			"_id": "req_4e3408fb7aec479fb7c7a0067bdc6e98",
+			"authentication": {},
+			"body": {},
+			"created": 1560392663639,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1556152109967,
+			"method": "GET",
+			"modified": 1560392682535,
+			"name": "/posts",
+			"parameters": [],
+			"parentId": "wrk_4ddd706168c54d48baf385ae78a2ea4e",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:3000/posts",
+			"_type": "request"
+		},
+		{
+			"_id": "req_0847e144b2634251b5715b8d0939f4f7",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"title\": \"new title with parameter\",\n\t\"body\": \"new body\"\n}"
+			},
+			"created": 1560392974965,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_5b1c52d5b9d04d0c97ac31904aedc7c5",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1558271812969.5,
+			"method": "PATCH",
+			"modified": 1560393556370,
+			"name": "/posts",
+			"parameters": [],
+			"parentId": "wrk_4ddd706168c54d48baf385ae78a2ea4e",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:3000/posts/5d01b02605e0540a50b12bfb",
+			"_type": "request"
+		},
+		{
+			"_id": "req_1d15a09bae8c40b8a8417acb1a6c3852",
+			"authentication": {},
+			"body": {},
+			"created": 1560393618077,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1557211961468.25,
+			"method": "DELETE",
+			"modified": 1560393640393,
+			"name": "/posts",
+			"parameters": [],
+			"parentId": "wrk_4ddd706168c54d48baf385ae78a2ea4e",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:3000/posts/5d01b02605e0540a50b12bfb",
+			"_type": "request"
+		}
+	]
+}
