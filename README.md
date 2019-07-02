@@ -14,7 +14,7 @@ In order to run the exercieses written in this course, please install the follow
 
 - [Node.js](https://nodejs.org) - JavaScript runtime built on Chrome's V8 JavaScript Engine (at the time of writing, this course is built against v11.10.0)
 - [Git](https://git-scm.com/downloads) - Version control software for cloning this repository to run examples
-- [Postman](https://www.getpostman.com) - An API development tool for quickly testing HTTP requests and responses
+- [Insomnia](https://www.insomnia.rest) - An API development tool for quickly testing HTTP requests and responses
 - Optional: [Visual Studio Code](https://code.visualstudio.com) - Free, open source code editing software with built-in terminal and GIT controls
 
 ## Directory Structure

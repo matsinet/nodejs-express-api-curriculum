@@ -4,9 +4,17 @@ Now that we have a basic server setup, we now need to connect it to our database
 
 ## Setting Up MongoDB
 
-To set up MongoDB, we are going to be using a package called `mongodb-runner`. This will make spinning up and configuring the MongoDB server super simple. If you are doing your work within this curriculum directory, you can use `mongodb-runner` by running `npx mongodb-runner start` which will start the MongoDB server. If you are running your files elsewhere, it may be a good idea to install the package globally by running `npm install -g mongodb-runner`. You can leave the MongoDB server running for as long as you need, but you can always run `npx mongodb-runner stop` if you are done.
+### Mac OS/Linux
+
+To set up MongoDB on Mac OS or Linux, we are going to be using a package called `mongodb-runner`. This will make spinning up and configuring the MongoDB server super simple. If you are doing your work within this curriculum directory, you can use `mongodb-runner` by running `npx mongodb-runner start` which will start the MongoDB server. If you are running your files elsewhere, it may be a good idea to install the package globally by running `npm install -g mongodb-runner`. You can leave the MongoDB server running for as long as you need, but you can always run `npx mongodb-runner stop` if you are done.
 
 > NOTE: If you installed `mongodb-runner` globally, you can use the commands without running it through `npx`, so simply doing `mongodb-runner start|stop` will suffice.
+
+### Windows
+
+To set up MongoDB on Windows, we need to follow the installation instructions on [MongoDB.com](https://www.mongodb.com/download-center/community)
+
+[Windows Walk Through](./WINDOWS-WALKTHRU.md)
 
 ## Connecting MongoDB to Express
 
