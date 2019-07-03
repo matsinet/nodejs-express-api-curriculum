@@ -1,6 +1,8 @@
 # Step 1 - Download
 [MongoDB.com Download Center](https://www.mongodb.com/download-center/community)
 
+> Download the 64bit version unless you know for sure otherwise.
+
 # Step 2 - Execute the installer
 ![Step 2](./img/Step01.PNG)
 
@@ -10,7 +12,7 @@
 # Step 4 - Select the "Custom" Setup Type
 ![Step 4](./img/Step03.PNG)
 
-# Step 5 - Select all the feature (Default)
+# Step 5 - Select all features (Default)
 ![Step 5](./img/Step04.PNG)
 
 # Step 6 - Install as a Service

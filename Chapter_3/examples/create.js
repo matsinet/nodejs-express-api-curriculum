@@ -24,7 +24,7 @@ app.get('/', (req, res) => {
   res.send(db_status)
 })
 
-app.post('/add', (req, res) => {
+app.post('/posts', (req, res) => {
   const newPost = new Post(req.body)
   newPost.save((err, post) => { return err ? res.sendStatus(500).json(err) : res.json(post) })
 })

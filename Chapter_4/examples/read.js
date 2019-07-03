@@ -24,13 +24,20 @@ app.get('/', (req, res) => {
   res.send(db_status)
 })
 
-app.post('/add', (req, res) => {
+app.post('/posts', (req, res) => {
   const newPost = new Post(req.body)
   newPost.save((err, post) => { return err ? res.sendStatus(500).json(err) : res.json(post) })
 })
 
-app.get('/list', (req, res) => {
+app.get('/posts', (req, res) => {
   Post.find({}, (error, data) => {
+    if (error) return res.sendStatus(500).json(error)
+    return res.json(data)
+  })
+})
+
+app.get('/posts/:postId', (req, res) => {
+  Post.findById(req.params.postId, (error, data) => {
     if (error) return res.sendStatus(500).json(error)
     return res.json(data)
   })

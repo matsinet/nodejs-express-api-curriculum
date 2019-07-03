@@ -39,7 +39,14 @@ app.get('/posts', (req, res) => {
     })
 })
 
-app.patch('/posts/:postId', (req, res) => {
+app.get('/posts/:postId', (req, res) => {
+    Post.findById(req.params.postId, (error, data) => {
+        if (error) return res.sendStatus(500).json(error)
+        return res.json(data)
+    })
+})
+
+app.put('/posts/:postId', (req, res) => {
     Post.findByIdAndUpdate(
         req.params.postId,
         {$set: {title: req.body.title, body: req.body.body}},
@@ -59,4 +66,4 @@ app.delete('/posts/:postId', (req, res) => {
         })
 })
 
-app.listen(port, () => console.log(`Example app listening of port ${port}`)) 
+app.listen(port, () => console.log(`Example app listening of port ${port}`))

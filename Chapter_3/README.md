@@ -39,10 +39,10 @@ We now will have access to `Post` in order to perform the operations we need to 
 
 ## Setting up the Route Handler
 
-The next thing we need to do is set up a new route that we will use to save new posts. We will declare a `POST` route at `/add` and will pass in a callback function that creates a new instance of a `Post` and saves it to the database.
+The next thing we need to do is set up a new route that we will use to save new posts. We will declare a `POST` route at `/posts` and will pass in a callback function that creates a new instance of a `Post` and saves it to the database.
 
 ```
-app.post('/add', (req, res) => {
+app.post('/posts', (req, res) => {
   const newPost = new Post(req.body)
   newPost.save((err, post) => { return err ? res.sendStatus(500).json(err) : res.json(post) })
 })
@@ -52,7 +52,7 @@ As you can see, once we save the `newPost` we will just return that data back to
 
 ## Testing
 
-In order to test this, we are going to use Postman to save the data. First, startup your server by `cd`ing into the `examples/` directory and running `node create.js` or by doing the same wherever you saved your file. Open up a new tab in Postman and enter `http://localhost:3000/add`. In the dropdown next to the URL, select the dropdown and click on "POST". Then, under the `Body` tab, click on `Raw` and then in the dropdown that says `Text`, select `JSON`. In the body of the request, insert the following data:
+In order to test this, we are going to use Insomnia to save the data. First, startup your server by `cd`ing into the `examples/` directory and running `node create.js` or by doing the same wherever you saved your file. Open up a new tab in Insomnia and enter `http://localhost:3000/add`. In the dropdown next to the URL, select the dropdown and click on "POST". Then, under the `Body` tab, click on `Raw` and then in the dropdown that says `Text`, select `JSON`. In the body of the request, insert the following data:
 
 ```
 {
