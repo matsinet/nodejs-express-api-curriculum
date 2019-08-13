@@ -52,7 +52,15 @@ As you can see, once we save the `newPost` we will just return that data back to
 
 ## Testing
 
-In order to test this, we are going to use Insomnia to save the data. First, startup your server by `cd`ing into the `examples/` directory and running `node create.js` or by doing the same wherever you saved your file. Open up a new tab in Insomnia and enter `http://localhost:3000/add`. In the dropdown next to the URL, select the dropdown and click on "POST". Then, under the `Body` tab, click on `Raw` and then in the dropdown that says `Text`, select `JSON`. In the body of the request, insert the following data:
+In order to test this, we are going to use Insomnia to save the data. First, start your server by `cd`ing into the `examples/` directory and running `node create.js` or by doing the same wherever you saved your file. 
+
+Create a request in Insomnia and enter `Create Post` in the name field.  
+![Create Request](/assets/img/insomnia-create-request.PNG)
+
+In the dropdown next to the Name, select the first dropdown that says `GET` and select `POST`. Then, select the second dropdown that says `No Body`, select `JSON`.  Click the Create button.  
+![New Request](/assets/img/insomnia-new-request.PNG)
+
+Enter `http://localhost:3000/posts` in the URL field. In the body of the request, insert the following data:
 
 ```
 {
@@ -60,6 +68,7 @@ In order to test this, we are going to use Insomnia to save the data. First, sta
 	"body": "This is a test body"
 }
 ```
+![Request Body](/assets/img/insomnia-request-body.PNG)
 
 When you click "Send" you should see that same data returned from the server so that you know it was properly saved. In the event that there is an error message, you will receive that instead.
 

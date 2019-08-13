@@ -12,9 +12,7 @@ To set up MongoDB on Mac OS or Linux, we are going to be using a package called 
 
 ### Windows
 
-To set up MongoDB on Windows, we need to follow the installation instructions on [MongoDB.com](https://www.mongodb.com/download-center/community)
-
-[Windows Walk Through](./WINDOWS-WALKTHRU.md)
+To set up MongoDB on Windows, we need to follow the installation instructions here: [Windows Walk Through](./WINDOWS-WALKTHRU.md)
 
 ## Connecting MongoDB to Express
 

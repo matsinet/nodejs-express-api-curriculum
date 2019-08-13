@@ -30,8 +30,8 @@ Where we pass the `id` of the post into the request query string.
 
 ## Testing
 
-In order to test this, we are going to use Insomnia to retrieve the data. First, startup your server by `cd`ing into the `examples/` directory and running `node read.js` or by doing the same wherever you saved your file. Open up a new tab in Insomnia and enter `http://localhost:3000/posts`.
+In order to test this, we are going to use Insomnia to retrieve the data. First, startup your server by `cd`ing into the `examples/` directory and running `node read.js` or by doing the same wherever you saved your file. Open up a new request in Insomnia and enter `http://localhost:3000/posts` leaving the request type as `GET`.
 
-When you click "Send" you should see a list of all the different posts that you have saved in your database.
+When you click "Send" you should see a list of all the different posts that you have saved in your database with their associated IDs added to the data you sent to the database.
 
 << [Chapter 3: Let's Create!](../Chapter_3/README.md) || [Home](../README.md) || [Chapter 5: Updating a Record](../Chapter_5/README.md) >>

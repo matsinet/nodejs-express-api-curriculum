@@ -19,12 +19,17 @@ Here, we are using the `Post` constant that we created to query the database and
 
 ## Testing
 
-In order to test this, we are going to use Insomnia to update the data. First, startup your server by `cd`ing into the `examples/` directory and running `node update.js` or by doing the same wherever you saved your file. Open up a new tab in Insomnia and enter `http://localhost:3000/posts`. In the dropdown next to the URL, select the dropdown and click on "PUT". Then, under the `Body` tab, click on `Raw` and then in the dropdown that says `Text`, select `JSON`. In the body of the request, insert the following data:
+In order to test this, we are going to use Insomnia to update the data. First, startup your server by `cd`ing into the `examples/` directory and running `node update.js` or by doing the same wherever you saved your file. 
 
+Create a request in Insomnia and enter `Update Post` in the name field similar to the `Create Post`  
+
+In the dropdown next to the Name, select the first dropdown that says `GET` and select `PUT`. Then, select the second dropdown that says `No Body`, select `JSON`.  Click the Create button.  
+
+Enter `http://localhost:3000/posts/<POST_ID>` in the URL field where `<POST_ID>` is the hash from one of the records listed in the previous `GET` request from Chapter 4. In the body of the request, insert the following data:  
 ```
 {
-    "title": "This is a new test title",
-    "body": "This is a new test body"
+	"title": "This is a modified title",
+	"body": "This is a modified body"
 }
 ```
 
