@@ -4,13 +4,13 @@ Now that we have a basic server setup, we now need to connect it to our database
 
 ## Setting Up MongoDB
 
-### Mac OS/Linux
+### Mac OS/Linux Only
 
 To set up MongoDB on Mac OS or Linux, we are going to be using a package called `mongodb-runner`. This will make spinning up and configuring the MongoDB server super simple. If you are doing your work within this curriculum directory, you can use `mongodb-runner` by running `npx mongodb-runner start` which will start the MongoDB server. If you are running your files elsewhere, it may be a good idea to install the package globally by running `npm install -g mongodb-runner`. You can leave the MongoDB server running for as long as you need, but you can always run `npx mongodb-runner stop` if you are done.
 
 > NOTE: If you installed `mongodb-runner` globally, you can use the commands without running it through `npx`, so simply doing `mongodb-runner start|stop` will suffice.
 
-### Windows
+### Windows Only
 
 To set up MongoDB on Windows, we need to follow the installation instructions here: [Windows Walk Through](./WINDOWS-WALKTHRU.md)
 
@@ -57,6 +57,12 @@ res.send(db_status)
 
 ## Running Our Example
 
-In order to run this example, you will need to start `mongodb-runner` *first* in order for our Express server to make a successful connection to it. If you want to use our pre-built example, `cd` into the `examples/` directory and first run `mongodb-runner start` and then run `node connect-mongo.js`. If the connection was sucessful, you should be able to navigate to [http://localhost:3000/](htto://localhost:3000) and see the words "Successfully opened connection to Mongo!".
+If you are using a Mac/Linux you will need to start `mongodb-runner` *first* in order for our Express server to make a successful connection to MongoDB.
+
+If you are using Windows, MongoDB should already be running as a service.   This can be verified in the Services Settings app. 
+
+To start the pre-built example, `cd` into the `examples/` directory and then run `node connect-mongo.js`. If the connection was successful, you should be able to navigate to [http://localhost:3000/](htto://localhost:3000) and see the words "Successfully opened connection to Mongo!".
+
+To start your own server script, change directory to that location and run `node <script name>`.
 
 << [Chapter 1: Hello world!](../Chapter_1/README.md) || [Home](../README.md) || [Chapter 3: Let's Create!](../Chapter_3/README.md) >>
